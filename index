@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Private</title>
+    <!-- ====================================================================
+         UPDATE THIS LINE whenever you restart the tunnel:
+         paste the new https://....trycloudflare.com address below.
+         ==================================================================== -->
+    <script>
+      var TARGET = "https://threatening-opposition-debut-automated.trycloudflare.com";
+    </script>
+    <!-- instant redirect (fallback if JS is disabled uses meta refresh) -->
+    <meta http-equiv="refresh"
+          content="0; url=https://threatening-opposition-debut-automated.trycloudflare.com" />
+    <style>
+      body { background:#0b0f14; color:#e6edf3; font:16px system-ui, sans-serif;
+             height:100vh; margin:0; display:grid; place-items:center; }
+      a { color:#5eead4; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Opening Private…</p>
+      <p><a id="link" href="#">Tap here if it doesn't open</a></p>
+    </div>
+    <script>
+      document.getElementById("link").href = TARGET;
+      location.replace(TARGET);
+    </script>
+  </body>
+</html>
